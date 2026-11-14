@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>喜炉烤肉 · 围挡营销方案（修订版）</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif;
+       background:#F4EFEA;color:#241C17;line-height:1.72;font-size:15px;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:520px;margin:0 auto;background:#F4EFEA;min-height:100vh;}
+
+  .hero{background:linear-gradient(160deg,#1A110D 0%,#2E1810 55%,#46200F 100%);
+        padding:34px 24px 30px;color:#fff;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-60px;bottom:-80px;width:230px;height:230px;
+        border-radius:50%;background:radial-gradient(circle,rgba(255,120,50,.32),transparent 70%);}
+  .hero .tag{display:inline-block;font-size:11px;letter-spacing:1px;color:#FFAE72;
+        border:1px solid rgba(255,174,114,.42);padding:3px 10px;border-radius:20px;margin-bottom:14px;}
+  .hero h1{font-size:25px;font-weight:800;letter-spacing:.8px;line-height:1.35;}
+  .hero h1 em{font-style:normal;color:#FFB870;}
+  .hero p{font-size:13px;color:#B5A296;margin-top:11px;line-height:1.7;}
+  .hero .kpi{display:flex;gap:9px;margin-top:17px;position:relative;z-index:2;}
+  .hero .kpi div{flex:1;background:rgba(255,255,255,.07);border-radius:10px;padding:9px 6px;text-align:center;}
+  .hero .kpi b{display:block;font-size:15px;color:#FFB870;font-weight:800;}
+  .hero .kpi span{font-size:10px;color:#A08F82;}
+
+  .sec{padding:24px 18px 2px;}
+  .sec-h{display:flex;align-items:baseline;gap:8px;margin-bottom:13px;padding-left:2px;}
+  .sec-h .num{font-size:12px;font-weight:800;color:#fff;background:#D9521C;
+        border-radius:6px;padding:1px 7px;}
+  .sec-h h2{font-size:17px;font-weight:800;letter-spacing:.4px;}
+
+  .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 10px rgba(60,35,20,.06);
+        margin-bottom:14px;border:1px solid rgba(0,0,0,.03);}
+  .card .pad{padding:16px 16px 18px;}
+  .card h3{font-size:15px;font-weight:700;margin-bottom:4px;}
+  .card .sub{font-size:12px;color:#9C8A7C;margin-bottom:12px;}
+  .card img{width:100%;display:block;background:#1A110D;}
+
+  .lead{font-size:13.5px;color:#453A32;margin-bottom:10px;}
+  .list{list-style:none;}
+  .list li{font-size:13.5px;color:#453A32;padding:7px 0 7px 17px;position:relative;
+        border-bottom:1px dashed #EFE7DF;}
+  .list li:last-child{border-bottom:none;}
+  .list li::before{content:"";position:absolute;left:3px;top:15px;width:5px;height:5px;
+        border-radius:50%;background:#D9521C;}
+  .list b{color:#241C17;}
+
+  table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  th{background:#FAF5F0;color:#8E7A6C;font-weight:700;font-size:11.5px;text-align:left;
+     padding:8px 6px;border-bottom:1px solid #EDE2D8;}
+  td{padding:9px 6px;border-bottom:1px solid #F3EBE3;vertical-align:top;color:#3E332B;}
+  tr:last-child td{border-bottom:none;}
+  td.hi{color:#C24312;font-weight:700;}
+
+  .quote{background:linear-gradient(135deg,#2E1810,#46200F);border-radius:16px;
+        padding:20px 18px;color:#fff;margin-bottom:14px;}
+  .quote .small{font-size:11px;color:#FFAE72;letter-spacing:1.5px;margin-bottom:9px;}
+  .quote .big{font-size:18px;font-weight:800;line-height:1.55;}
+  .quote .big em{font-style:normal;color:#FFB870;}
+
+  .stage{border-radius:14px;padding:15px 16px;margin-bottom:11px;border:1px solid #EFE0D4;background:#fff;}
+  .stage .st{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
+  .stage .st .dot{width:9px;height:9px;border-radius:50%;background:#D9521C;}
+  .stage .st h4{font-size:14.5px;font-weight:800;}
+  .stage .st span{font-size:11px;color:#9C8A7C;margin-left:auto;}
+  .stage p{font-size:13px;color:#453A32;}
+  .stage p b{color:#C24312;}
+
+  .warn{background:#FFF5EC;border:1px solid #F6DCC4;border-radius:14px;padding:16px 16px 14px;margin-bottom:14px;}
+  .warn h3{font-size:14px;font-weight:700;color:#A84E14;margin-bottom:10px;}
+  .warn ol{padding-left:18px;}
+  .warn li{font-size:13px;color:#5A4838;margin-bottom:9px;line-height:1.66;}
+  .warn li:last-child{margin-bottom:0;}
+  .warn b{color:#A84E14;}
+
+  .calc{background:#241A14;border-radius:16px;padding:17px 16px;color:#EDE2D8;margin-bottom:14px;}
+  .calc h3{font-size:14px;color:#FFB870;font-weight:700;margin-bottom:11px;}
+  .calc .row{display:flex;justify-content:space-between;font-size:13px;padding:6px 0;
+        border-bottom:1px dashed rgba(255,255,255,.1);}
+  .calc .row:last-of-type{border-bottom:none;}
+  .calc .row span{color:#A6958A;}
+  .calc .row b{color:#fff;font-weight:700;}
+
+  .foot{padding:20px 18px 34px;text-align:center;font-size:11px;color:#A2917F;line-height:1.9;}
+  .foot b{color:#7C6A5C;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="tag">生态城 · 和韵路 · 美逸园 · 约100㎡</div>
+    <h1>喜炉烤肉<br><em>围挡营销方案 · 修订版</em></h1>
+    <p>上一版把对手认错了。真正的对手不在万达，在 310 米外。这一版按真实战场重写。</p>
+    <div class="kpi">
+      <div><b>310m</b><span>最近的冠军</span></div>
+      <div><b>1 个码</b><span>只放群码</span></div>
+      <div><b>0 投放</b><span>不花广告费</span></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">00</span><h2>先看清楚：门口站着谁</h2></div>
+    <div class="card"><div class="pad">
+      <div class="sub">按距离排序，这几家才是真对手</div>
+      <table>
+        <tr><th>门店</th><th style="width:50px;">距离</th><th style="width:40px;">评分</th><th style="width:44px;">评价</th><th style="width:40px;">人均</th></tr>
+        <tr><td>巷子里·地摊烤肉（吉宝店）</td><td class="hi">0.31km</td><td>4.7</td><td class="hi">3941</td><td>72</td></tr>
+        <tr><td>兴旺原味烧烤</td><td>40m</td><td>3.6</td><td>3</td><td>37</td></tr>
+        <tr><td>朱姥爷烧烤</td><td>1.58km</td><td>3.8</td><td>126</td><td>64</td></tr>
+        <tr><td>龙歌自助小火锅（万达）</td><td>1.59km</td><td>3.6</td><td>308</td><td>58</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;">
+        <b>万达和远洋不是对手，310 米外那家才是。</b>它 5 年做出来的 3941 条评价，就是这片市场的标准答案。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">01</span><h2>拿什么打：三条它给不了的</h2></div>
+    <div class="card"><div class="pad">
+      <table>
+        <tr><th style="width:84px;">武器</th><th>为什么打得动</th></tr>
+        <tr><td class="hi">齐齐哈尔这一口</td><td>3 公里内只有延双做韩式桌烤，<b>齐齐哈尔鲜拌这一支是空的</b>。这是品类唯一性，不是话术</td></tr>
+        <tr><td class="hi">分量实诚</td><td>巷子里 10 月有 1 星差评："菜量比上次减少很多，下次不会再来"。<b>这是它最伤的伤口</b></td></tr>
+        <tr><td class="hi">杭州 4.4 分的手艺</td><td>218 条评价、几乎无差评、达人是主动来拍的。出品能力带得走，评价带不走</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;color:#A84E14;font-weight:600;">
+        围挡要做的，就是把这三条在 3 秒里说完。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">02</span><h2>围挡设计（5.0 × 2.2 米）</h2></div>
+    <div class="card">
+      <img src="https://s3plus.sankuai.com/mzk-emergency-plan/rhino/SaasPartner/lousu/1794617315928_e7175074.png" alt="喜炉烤肉围挡">
+      <div class="pad" style="padding-top:14px;">
+        <div class="sub">按门面净宽 5 米设计，实际宽度不等比缩放没问题，字号别动</div>
+        <ul class="list">
+          <li><b>第一行：齐齐哈尔烤肉</b>——品类答案，说清吃什么</li>
+          <li><b>第二行：鲜拌现切 · 分量实诚</b>——差异点 + 打对手软肋</li>
+          <li><b>第三行：围炉自己烤，一家人坐下来吃一顿</b>——场景，锁家庭客</li>
+          <li><b>橙色条：开业当天凭群身份送一份现拌招牌肉</b>——唯一钩子</li>
+          <li><b>底部：地址 + 开业日 + 只放一个群码</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">03</span><h2>为什么这么排</h2></div>
+    <div class="quote">
+      <div class="small">三 秒 法 则</div>
+      <div class="big">路人只给你 3 秒<br><em>第一眼必须知道"吃什么"</em></div>
+    </div>
+    <div class="card"><div class="pad">
+      <ul class="list">
+        <li><b>不写"喜炉烤肉"最大</b>——新品牌没认知，写再大也没人记。品牌放顶部小字就够</li>
+        <li><b>写"齐齐哈尔烤肉"</b>——这是搜索词，也是这片市场空着的位置</li>
+        <li><b>写"分量实诚"</b>——不是喊口号，是直接对着隔壁那条 1 星差评</li>
+        <li><b>只放一个码</b>——三个码会让人犹豫扫哪个，扫码率直接砍半</li>
+        <li><b>地址写"院内"</b>——你是院内店，不写清楚，人走到门口会犹豫</li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">04</span><h2>送什么：一份有名字的现拌肉</h2></div>
+    <div class="card"><div class="pad">
+      <p class="lead">不要送"一份肉"，要送<b>一道有名字的肉</b>。</p>
+      <table>
+        <tr><th>做法</th><th>效果</th></tr>
+        <tr><td>送"一份招牌肉"</td><td>客人不知道值多少，也没法跟朋友说</td></tr>
+        <tr><td class="hi">送"XX 分钟现拌招牌肉"</td><td>有工艺、有数字、能复述——跟巷子里"600 秒土豆片"是同一个逻辑</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;">
+        成本控制在 <b>12–15 元/份</b>，每人限一份、限堂食、不折现。名字可以在菜单定稿时一起定，比如"8 分钟现拌牛肋条"。</p>
+      <p class="lead" style="color:#A84E14;font-weight:600;">
+        这道菜以后就是店里的记忆点，不只是开业赠品。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">05</span><h2>三期法：什么时候说什么话</h2></div>
+
+    <div class="stage">
+      <div class="st"><span class="dot"></span><h4>一期 · 现在到 T-4 周</h4><span>只攒人</span></div>
+      <p>主文案按设计图走，不加价格、不加活动。<b>唯一任务：让人扫码进群。</b><br>
+      这个阶段对应老板方案里的"开业前 4 周"，围挡走在线上配置前面。</p>
+    </div>
+
+    <div class="stage">
+      <div class="st"><span class="dot"></span><h4>二期 · T-4 到 T-1 周</h4><span>给理由</span></div>
+      <p>加一行真实人数：<b>已 XX 人进群，开业当天送现拌招牌肉</b>。<br>
+      同时把"12月XX日开火"的日期定死。</p>
+    </div>
+
+    <div class="stage">
+      <div class="st"><span class="dot"></span><h4>三期 · 开业前 3 天</h4><span>造紧迫</span></div>
+      <p>换成倒计时：<b>还有 3 天开火 · 群里已 XX 人</b>。<br>
+      这时候不用再解释自己了，只制造"再不来就晚了"。</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">06</span><h2>群里这一个月怎么发</h2></div>
+    <div class="card"><div class="pad">
+      <div class="sub">群主的活只能老板自己干</div>
+      <table>
+        <tr><th style="width:66px;">频次</th><th>发什么</th></tr>
+        <tr><td>每天</td><td>一张装修/备菜进度照，10 秒拍完</td></tr>
+        <tr><td>每周五</td><td>20 元红包分 10 个，手气最佳送双人餐</td></tr>
+        <tr><td>T-7</td><td>发菜单实拍：现拌肉、炭火、小菜各一张</td></tr>
+        <tr><td>T-3</td><td>倒计时 + 开业流程（几点开、怎么核销、要不要排队）</td></tr>
+        <tr><td>T-1</td><td>"明天见" + 门店定位</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;color:#A84E14;font-weight:600;">
+        别发广告，别刷屏。群里最值钱的是"这家店在认真准备"。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">07</span><h2>开业 7 天怎么接</h2></div>
+    <div class="card"><div class="pad">
+      <table>
+        <tr><th style="width:60px;">时间</th><th>动作</th></tr>
+        <tr><td>T~T+3</td><td><b>只接群内客人</b>，群里发排队实况，三天把出品磨顺</td></tr>
+        <tr><td>T 当天</td><td>门口一张桌子做核销，一个人专管"扫码-登记-送肉"</td></tr>
+        <tr><td>T+4 起</td><td>放开散客，上团购和代金券，群里推"二刷券"</td></tr>
+        <tr><td>全程</td><td><b>每桌请人拍一张照发点评</b>，换一份小菜。目标：首月 20 条以上</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;">
+        巷子里每月约 55 条评价，折下来是每天 2 条。你首月先做到 20 条，第二个月追 40 条，才谈得上"追上"。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">08</span><h2>算账</h2></div>
+    <div class="calc">
+      <h3>围挡期总投入</h3>
+      <div class="row"><span>围挡喷绘 5×2.2m（含安装）</span><b>约 1000 元</b></div>
+      <div class="row"><span>群码可换贴纸 8 张</span><b>约 20 元</b></div>
+      <div class="row"><span>每周红包 × 4 轮</span><b>约 80 元</b></div>
+      <div class="row"><span>开业送肉（65 份 × 13 元）</span><b>约 845 元</b></div>
+      <div class="row"><span>合计</span><b>约 1945 元</b></div>
+      <div class="row"><span>换来</span><b>约 65 桌首单</b></div>
+      <div class="row"><span>折合获客成本</span><b>约 30 元／桌</b></div>
+    </div>
+    <div class="card"><div class="pad">
+      <p class="lead">推广通点一下 1–3 元，进店转化 3%–5%，一个到店客人 30–60 元。<br>
+      <b>30 元一桌，是这家店能拿到的最便宜的客人——而且这批人是住周边的，能再来。</b></p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">09</span><h2>五个必须盯住的坑</h2></div>
+    <div class="warn">
+      <h3>不做这些，围挡贴了也白贴</h3>
+      <ol>
+        <li><b>群码 7 天过期。</b>定每周一早上换码的闹钟，围挡上留一块可替换贴纸位。</li>
+        <li><b>微信群扫码上限 200 人。</b>快到 200 就建二群。</li>
+        <li><b>只贴码不设人，扫码率只有 2%–3%。</b>工人在的时候让他们喊一句，或摆张小桌放立牌。</li>
+        <li><b>送肉规则写死在围挡和群里。</b>每人限一份、限堂食、不打包、不折现——少一句，开业当天必吵。</li>
+        <li><b>说开火就开火。</b>日期挂上围挡，推迟一次，攒的人全凉。</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">10</span><h2>还需要你补四个数</h2></div>
+    <div class="card"><div class="pad">
+      <ul class="list">
+        <li><b>门面实际宽度</b>——现在按 5 米做的，差得多我调版式</li>
+        <li><b>具体门牌 / 从哪个口进院子</b>——院内店，这句不补，人走到门口会犹豫</li>
+        <li><b>开业日</b>——三期怎么切分全靠这个</li>
+        <li><b>送的那份肉定成哪道</b>——决定围挡上写什么名字</li>
+      </ul>
+      <p class="lead" style="margin-top:12px;color:#A84E14;font-weight:600;">
+        四个数一到，喷绘稿定版，当天能发广告公司。</p>
+    </div></div>
+  </div>
+
+  <div class="foot">
+    喜炉烤肉 · 围挡营销方案 · 修订版<br>
+    <b>竞对数据取自平台门店库，截至 2026 年 11 月</b><br>
+    门店信息以实际确认后为准
+  </div>
+
+</div>
+</body>
+</html>
