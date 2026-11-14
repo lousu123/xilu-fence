@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>喜炉烤肉 · 围挡期活动方案</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif;
+       background:#F4EFEA;color:#241C17;line-height:1.72;font-size:15px;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:520px;margin:0 auto;background:#F4EFEA;min-height:100vh;}
+
+  .hero{background:linear-gradient(160deg,#1A110D 0%,#2E1810 55%,#46200F 100%);
+        padding:34px 24px 30px;color:#fff;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-60px;bottom:-80px;width:230px;height:230px;
+        border-radius:50%;background:radial-gradient(circle,rgba(255,120,50,.32),transparent 70%);}
+  .hero .tag{display:inline-block;font-size:11px;letter-spacing:1px;color:#FFAE72;
+        border:1px solid rgba(255,174,114,.42);padding:3px 10px;border-radius:20px;margin-bottom:14px;}
+  .hero h1{font-size:25px;font-weight:800;letter-spacing:.8px;line-height:1.35;}
+  .hero h1 em{font-style:normal;color:#FFB870;}
+  .hero p{font-size:13px;color:#B5A296;margin-top:11px;line-height:1.7;}
+  .hero .kpi{display:flex;gap:9px;margin-top:17px;position:relative;z-index:2;}
+  .hero .kpi div{flex:1;background:rgba(255,255,255,.07);border-radius:10px;padding:9px 6px;text-align:center;}
+  .hero .kpi b{display:block;font-size:15px;color:#FFB870;font-weight:800;}
+  .hero .kpi span{font-size:10px;color:#A08F82;}
+
+  .sec{padding:24px 18px 2px;}
+  .sec-h{display:flex;align-items:baseline;gap:8px;margin-bottom:13px;padding-left:2px;}
+  .sec-h .num{font-size:12px;font-weight:800;color:#fff;background:#D9521C;
+        border-radius:6px;padding:1px 7px;}
+  .sec-h h2{font-size:17px;font-weight:800;letter-spacing:.4px;}
+
+  .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 10px rgba(60,35,20,.06);
+        margin-bottom:14px;border:1px solid rgba(0,0,0,.03);}
+  .card .pad{padding:16px 16px 18px;}
+  .card h3{font-size:15px;font-weight:700;margin-bottom:4px;}
+  .card .sub{font-size:12px;color:#9C8A7C;margin-bottom:12px;}
+
+  .lead{font-size:13.5px;color:#453A32;margin-bottom:10px;}
+  .list{list-style:none;}
+  .list li{font-size:13.5px;color:#453A32;padding:7px 0 7px 17px;position:relative;
+        border-bottom:1px dashed #EFE7DF;}
+  .list li:last-child{border-bottom:none;}
+  .list li::before{content:"";position:absolute;left:3px;top:15px;width:5px;height:5px;
+        border-radius:50%;background:#D9521C;}
+  .list b{color:#241C17;}
+
+  table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  th{background:#FAF5F0;color:#8E7A6C;font-weight:700;font-size:11.5px;text-align:left;
+     padding:8px 6px;border-bottom:1px solid #EDE2D8;}
+  td{padding:9px 6px;border-bottom:1px solid #F3EBE3;vertical-align:top;color:#3E332B;}
+  tr:last-child td{border-bottom:none;}
+  td.hi{color:#C24312;font-weight:700;}
+
+  .quote{background:linear-gradient(135deg,#2E1810,#46200F);border-radius:16px;
+        padding:20px 18px;color:#fff;margin-bottom:14px;}
+  .quote .small{font-size:11px;color:#FFAE72;letter-spacing:1.5px;margin-bottom:9px;}
+  .quote .big{font-size:18px;font-weight:800;line-height:1.55;}
+  .quote .big em{font-style:normal;color:#FFB870;}
+
+  .act{background:#fff;border-radius:16px;margin-bottom:12px;overflow:hidden;
+       box-shadow:0 2px 10px rgba(60,35,20,.06);border:1px solid rgba(0,0,0,.03);}
+  .act .top{background:linear-gradient(100deg,#2B1A10,#3E2716);padding:12px 16px;display:flex;
+       align-items:center;gap:10px;}
+  .act .top .idx{font-size:11px;font-weight:800;color:#1A110D;background:#FFC05C;
+       border-radius:5px;padding:1px 7px;}
+  .act .top h4{font-size:15px;font-weight:700;color:#fff;flex:1;}
+  .act .top .goal{font-size:10.5px;color:#B39980;}
+  .act .body{padding:13px 16px 15px;}
+  .kv{font-size:13px;color:#453A32;margin-bottom:5px;}
+  .kv b{color:#241C17;display:inline-block;min-width:62px;}
+
+  .warn{background:#FFF5EC;border:1px solid #F6DCC4;border-radius:14px;padding:16px 16px 14px;margin-bottom:14px;}
+  .warn h3{font-size:14px;font-weight:700;color:#A84E14;margin-bottom:10px;}
+  .warn ol{padding-left:18px;}
+  .warn li{font-size:13px;color:#5A4838;margin-bottom:9px;line-height:1.66;}
+  .warn li:last-child{margin-bottom:0;}
+  .warn b{color:#A84E14;}
+
+  .calc{background:#241A14;border-radius:16px;padding:17px 16px;color:#EDE2D8;margin-bottom:14px;}
+  .calc h3{font-size:14px;color:#FFB870;font-weight:700;margin-bottom:11px;}
+  .calc .row{display:flex;justify-content:space-between;font-size:13px;padding:6px 0;
+        border-bottom:1px dashed rgba(255,255,255,.1);}
+  .calc .row:last-of-type{border-bottom:none;}
+  .calc .row span{color:#A6958A;}
+  .calc .row b{color:#fff;font-weight:700;}
+
+  .foot{padding:20px 18px 34px;text-align:center;font-size:11px;color:#A2917F;line-height:1.9;}
+  .foot b{color:#7C6A5C;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="tag">生态城 · 和韵路 · 美逸园 · 约100㎡</div>
+    <h1>喜炉烤肉<br><em>围挡期活动方案</em></h1>
+    <p>只讲做什么动作、给什么、限几份、花多少钱、谁来干。<br>不讲设计、不讲物料排版。</p>
+    <div class="kpi">
+      <div><b>8 个活动</b><span>四阶段串起来</span></div>
+      <div><b>≤2600 元</b><span>赠品封顶</span></div>
+      <div><b>30 元/桌</b><span>获客成本</span></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">00</span><h2>整个围挡期只干一件事</h2></div>
+    <div class="quote">
+      <div class="small">唯 一 目 标</div>
+      <div class="big">把周边 3 公里的人<br><em>装进一个微信群</em></div>
+      <div class="note" style="font-size:12px;color:#B39980;margin-top:10px;line-height:1.65;">
+        围挡不是广告，是入口。开业那天能不能有人排队，全看这一个月攒了多少人。</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">01</span><h2>四个阶段，八场活动</h2></div>
+    <div class="card"><div class="pad">
+      <table>
+        <tr><th style="width:66px;">阶段</th><th>活动</th><th style="width:64px;">核心指标</th></tr>
+        <tr><td>围挡期</td><td>① 扫码进群领肉券<br>② 每周五群内红包<br>③ 拉邻居进群加送</td><td class="hi">进群人数</td></tr>
+        <tr><td>开业前 3 天</td><td>④ 群里优先预订</td><td>预订桌数</td></tr>
+        <tr><td>开业 D1–D7</td><td>⑤ 送肉核销<br>⑥ 开卡有礼<br>⑦ 特价菜</td><td class="hi">核销率 / 评价数</td></tr>
+        <tr><td>D8 起</td><td>⑧ 储值 + 累计次数赠券</td><td>储值率 / 复购</td></tr>
+      </table>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">02</span><h2>每场活动怎么配</h2></div>
+
+    <div class="act">
+      <div class="top"><span class="idx">①</span><h4>扫码进群领肉券</h4><span class="goal">拉新</span></div>
+      <div class="body">
+        <div class="kv"><b>参与方式</b>扫围挡上的群码进群，群公告置顶领券方式</div>
+        <div class="kv"><b>给什么</b>一份「现拌招牌肉」兑换券</div>
+        <div class="kv"><b>规则</b>每人限 1 份·限堂食·不打包·不折现·开业后 7 天内有效</div>
+        <div class="kv"><b>后台配</b>营销中心 → 会员营销 → <b>扫码领券</b>，绑定"群专属"券</div>
+        <div class="kv"><b>成本</b>12–15 元/份</div>
+      </div>
+    </div>
+
+    <div class="act">
+      <div class="top"><span class="idx">②</span><h4>每周五群内红包</h4><span class="goal">防死群</span></div>
+      <div class="body">
+        <div class="kv"><b>时间</b>每周五 20:00，围挡期共 4 轮</div>
+        <div class="kv"><b>玩法</b>20 元分 10 个，手气最佳送双人餐一份</div>
+        <div class="kv"><b>规则</b>中奖者开业后 7 天内到店使用</div>
+        <div class="kv"><b>后台配</b>线下执行，中奖名单在后台建券人工发放</div>
+        <div class="kv"><b>成本</b>约 80 元 + 4 份双人餐</div>
+      </div>
+    </div>
+
+    <div class="act">
+      <div class="top"><span class="idx">③</span><h4>拉邻居进群加送</h4><span class="goal">裂变</span></div>
+      <div class="body">
+        <div class="kv"><b>参与方式</b>群内成员拉 3 位周边邻居进群</div>
+        <div class="kv"><b>给什么</b>开业当天额外加送一份小菜</div>
+        <div class="kv"><b>规则</b>需拉的人真的住 3 公里内，群主人工核验</div>
+        <div class="kv"><b>后台配</b>线下登记，开业当天现场发放</div>
+        <div class="kv"><b>成本</b>约 5 元/份</div>
+      </div>
+    </div>
+
+    <div class="act">
+      <div class="top"><span class="idx">④</span><h4>群里优先预订</h4><span class="goal">锁开业客流</span></div>
+      <div class="body">
+        <div class="kv"><b>时间</b>开业前 3 天开放</div>
+        <div class="kv"><b>规则</b>群内可预订 D1–D3 的桌位，每桌收 20 元定金，到店抵扣</div>
+        <div class="kv"><b>好处</b>提前知道来多少人，备货不慌；也能筛掉"来了就走"的</div>
+        <div class="kv"><b>后台配</b>预订功能 + 定金，或群内人工登记</div>
+        <div class="kv"><b>成本</b>0（定金可抵）</div>
+      </div>
+    </div>
+
+    <div class="act">
+      <div class="top"><span class="idx">⑤</span><h4>送肉核销</h4><span class="goal">转化</span></div>
+      <div class="body">
+        <div class="kv"><b>时间</b>D1–D7</div>
+        <div class="kv"><b>规则</b>出示群内券码，一桌限用 1 张，每天核销上限 <b>40 份</b></div>
+        <div class="kv"><b>总额上限</b>200 份（约 2600 元），送完即止</div>
+        <div class="kv"><b>后台配</b>优惠券核销，收银端自动识别</div>
+        <div class="kv"><b>执行</b>门口一张桌子，专人负责"扫码—登记—送肉"</div>
+      </div>
+    </div>
+
+    <div class="act">
+      <div class="top"><span class="idx">⑥</span><h4>开卡有礼</h4><span class="goal">变会员</span></div>
+      <div class="body">
+        <div class="kv"><b>时间</b>D1 起长期</div>
+        <div class="kv"><b>规则</b>扫码注册会员，当场送一份小菜或饮品</div>
+        <div class="kv"><b>后台配</b>会员营销 → <b>开卡有礼</b>，赠品选小菜券</div>
+        <div class="kv"><b>成本</b>3–5 元/人</div>
+        <div class="kv"><b>为什么</b>第一次就把人变成会员，后面才有复购可言</div>
+      </div>
+    </div>
+
+    <div class="act">
+      <div class="top"><span class="idx">⑦</span><h4>特价菜</h4><span class="goal">记忆点</span></div>
+      <div class="body">
+        <div class="kv"><b>时间</b>D1 起</div>
+        <div class="kv"><b>规则</b>「现拌招牌肉」设特价 18–28 元，每桌限点 1 份</div>
+        <div class="kv"><b>后台配</b>促销活动 → <b>特价菜</b>，指定菜品 + 限购 1 份</div>
+        <div class="kv"><b>为什么</b>不动套餐价，用一道菜造记忆点——跟巷子里"600 秒土豆片"一个逻辑</div>
+      </div>
+    </div>
+
+    <div class="act">
+      <div class="top"><span class="idx">⑧</span><h4>储值 + 累计次数</h4><span class="goal">复购</span></div>
+      <div class="body">
+        <div class="kv"><b>时间</b>D8 起</div>
+        <div class="kv"><b>储值</b>充 300 送 50 / 充 500 送 100</div>
+        <div class="kv"><b>集点</b>累计到店 5 次，送一份招牌肉</div>
+        <div class="kv"><b>后台配</b>会员储值规则 + 会员营销 → <b>累计次数赠券</b></div>
+        <div class="kv"><b>判断线</b>储值率做不到 15%，说明第一餐没让人记住</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">03</span><h2>预算与止损</h2></div>
+    <div class="calc">
+      <h3>围挡期总预算（按进群 270 人测算）</h3>
+      <div class="row"><span>每周红包 × 4 轮</span><b>80 元</b></div>
+      <div class="row"><span>送肉 65 份 × 13 元</span><b>845 元</b></div>
+      <div class="row"><span>拉人加送小菜 20 份 × 5 元</span><b>100 元</b></div>
+      <div class="row"><span>双人餐奖励 4 份（按成本）</span><b>约 200 元</b></div>
+      <div class="row"><span>开卡礼 100 人 × 4 元</span><b>400 元</b></div>
+      <div class="row"><span>合计</span><b>约 1625 元</b></div>
+      <div class="row"><span>封顶（含应急余量）</span><b>2600 元</b></div>
+    </div>
+
+    <div class="warn">
+      <h3>五条止损线，写在纸上贴墙</h3>
+      <ol>
+        <li><b>送肉每天最多 40 份</b>，超了当天改送小菜，门口贴出来说明。</li>
+        <li><b>送肉总额 200 份封顶</b>，群里提前公示，送完即止。</li>
+        <li><b>券有效期 7 天</b>，不做无限期，避免三个月后突然涌来一堆。</li>
+        <li><b>扫码低于 150 人</b>：先补人值守、加引导，不要靠加码送东西硬拉。</li>
+        <li><b>扫码超过 400 人</b>：立刻建二群，赠品改分批核销，别开业第一天就送光预算。</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">04</span><h2>谁在哪天干什么</h2></div>
+    <div class="card"><div class="pad">
+      <table>
+        <tr><th style="width:64px;">时间</th><th>动作</th><th style="width:56px;">谁</th></tr>
+        <tr><td>每周一</td><td>换群二维码贴纸</td><td>老板</td></tr>
+        <tr><td>每天</td><td>群里发 1 张装修/备菜照</td><td>老板</td></tr>
+        <tr><td>每周五 20:00</td><td>发红包 + 抽双人餐</td><td>老板</td></tr>
+        <tr><td>T-7</td><td>发菜单实拍（现拌肉/炭火/小菜）</td><td>老板</td></tr>
+        <tr><td>T-3</td><td>开预订 + 发开业流程</td><td>老板</td></tr>
+        <tr><td>T-1</td><td>"明天见" + 定位</td><td>老板</td></tr>
+        <tr><td>D1 当天</td><td>门口核销台：扫码—登记—送肉</td><td>1 名服务员</td></tr>
+        <tr><td>D1–D7</td><td>每桌请人拍照发点评</td><td>服务员</td></tr>
+        <tr><td>D8 起</td><td>推储值 + 集点</td><td>老板 / 收银</td></tr>
+      </table>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">05</span><h2>只看三个数</h2></div>
+    <div class="card"><div class="pad">
+      <table>
+        <tr><th style="width:88px;">指标</th><th>及格线</th><th>怎么判断</th></tr>
+        <tr><td><b>进群人数</b></td><td class="hi">270 人</td><td>低于 150 说明位置或物料有问题</td></tr>
+        <tr><td><b>核销率</b></td><td class="hi">60%</td><td>群里 270 人，开业 7 天至少来 160 人</td></tr>
+        <tr><td><b>评价数</b></td><td class="hi">首月 20 条</td><td>低于 10 条等于白开，第二个月要补</td></tr>
+      </table>
+      <p class="lead" style="margin-top:12px;color:#A84E14;font-weight:600;">
+        三个数每周对一次。不达标就调动作，别等到开业才看。</p>
+    </div></div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h"><span class="num">06</span><h2>这套活动的前提</h2></div>
+    <div class="card"><div class="pad">
+      <ul class="list">
+        <li>老板<b>每天能发一条群消息</b>——发不了，整套活动没有主心骨</li>
+        <li>开业日<b>能定下来</b>——日期不定，倒计时和预订都做不了</li>
+        <li>那份肉<b>能定成哪道菜</b>——决定围挡和群里怎么说</li>
+        <li>群里人数<b>能实时看到</b>——不然三期进度没法播报</li>
+      </ul>
+      <p class="lead" style="margin-top:12px;">这四条缺一条，方案就要改结构。</p>
+    </div></div>
+  </div>
+
+  <div class="foot">
+    喜炉烤肉 · 围挡期活动方案<br>
+    <b>经营数据取自平台门店库，截至 2026 年 11 月</b><br>
+    活动参数可直接落到收银后台，无需二次拆解
+  </div>
+
+</div>
+</body>
+</html>
